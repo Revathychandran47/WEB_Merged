@@ -98,7 +98,7 @@ public class Utilities_positive_scenarios extends Generic_function{
 			Robot robot = new Robot();
 			browser_wait(20);
 			robot.keyPress(KeyEvent.VK_TAB);
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 			for (int i=0; i<5;i++) {
 				robot.keyPress(KeyEvent.VK_NUMPAD4);
 				robot.keyPress(KeyEvent.VK_NUMPAD2);
