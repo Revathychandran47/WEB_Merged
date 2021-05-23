@@ -151,7 +151,6 @@ public class Circles_negative_scenarios extends Generic_function{
 			Assert.assertEquals(str,td_reader("mymed_blank_credential_msg"));
 			browser_close();
 			browser_switch();
-			System.out.println("Circles -");
 			browser_close();
 		}catch (Exception e) {
 			e.getMessage();
