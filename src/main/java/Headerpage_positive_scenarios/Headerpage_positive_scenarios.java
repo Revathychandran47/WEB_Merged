@@ -22,7 +22,7 @@ public class Headerpage_positive_scenarios extends Generic_function {
 			}
 			}
 	
-	/*TC 001 - Validate that the  'mpowered health’ logo  should be present in the header*/
+	/*TC 001 - Validate that the  'mpowered healthâ€™ logo  should be present in the header*/
 	@Then("check the mpowered health logo  should be present in the header")
 	public static void header_positive_tc_001() throws IOException {
 		try {
@@ -200,7 +200,6 @@ public class Headerpage_positive_scenarios extends Generic_function {
 			value = driver.findElement(By.xpath(OR_reader("Object_Locator", "terms_ok"))).isDisplayed();
 	    	Assert.assertEquals(true,value);
 	    	click("terms_ok");
-	    	System.out.println("header positive");
 	    	driverquit();
 		} catch (Exception e) {
 			e.getMessage();
