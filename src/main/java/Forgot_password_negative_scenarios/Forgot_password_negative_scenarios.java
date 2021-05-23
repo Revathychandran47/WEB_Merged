@@ -88,7 +88,6 @@ public class Forgot_password_negative_scenarios extends Generic_function {
 			driver.findElement(By.xpath(OR_reader("Object_Locator","send_reset_link"))).click();
 			str= driver.findElement(By.xpath(OR_reader("Object_Locator","forgot_password_phoneno_exist_valid_msg"))).getText();
 			Assert.assertEquals(str,td_reader("forgot_phone_no_exist_msg"));
-			System.out.println("forgot negative");
 			browser_close();
 		} catch (Exception e) {
 			e.printStackTrace();
