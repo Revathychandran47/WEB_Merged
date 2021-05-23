@@ -144,7 +144,7 @@ public class Circles_positive_scenarios extends Generic_function  {
 	}
 
 
-	/*TC 012 - Validate that the user can able to view 'My Medicare’ icon in the Circles page and also it should be clickable */
+	/*TC 012 - Validate that the user can able to view 'My Medicareâ€™ icon in the Circles page and also it should be clickable */
 	@Given("My Medicare logo should be present in the Circles page  and it should be clickable")
 	public void circle_positive_tc_012() throws IOException  {
 		try {
@@ -162,7 +162,6 @@ public class Circles_positive_scenarios extends Generic_function  {
 			value = driver.findElement(By.xpath(OR_reader("Object_Locator", "circle_mymedicareassert"))).isDisplayed();
 			Assert.assertEquals(true,value);
 			click("logout");
-			System.out.println("circles +");
 			driverquit();
 		} catch (IOException e) {
 			e.getMessage();
