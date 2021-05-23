@@ -55,7 +55,6 @@ public class Services_positive_scenario extends Generic_function {
 			e.printStackTrace();
 			takeScreenShot("servicepage_positive_tc_003");
 		}
-		System.out.println("services +");
 		browser_close();
 	}
 		}
