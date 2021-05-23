@@ -190,16 +190,16 @@ public class Utilities_negative_scenarios  extends Generic_function{
 			click("utilities");
 			browser_wait(20);
 			click("award_points");
-//			browser_wait(4=20);
-//			value=driver.findElement(By.xpath(OR_reader("Object_Locator", "awardpoints_redeem_button"))).isEnabled();
-//			if(value==true) {
-//				Thread.sleep(1000);
-//				click("awardpoints_redeem_button");				
-//	}
-//			else
-//			{
-//				browser_back();
-//			}
+			browser_wait(4=20);
+			value=driver.findElement(By.xpath(OR_reader("Object_Locator", "awardpoints_redeem_button"))).isEnabled();
+			if(value==true) {
+				Thread.sleep(1000);
+				click("awardpoints_redeem_button");				
+	}
+			else
+			{
+				browser_back();
+			}
 		}catch (Exception e) {
 			e.printStackTrace();
 			takeScreenShot("utilities_negative_tc_006");
@@ -214,33 +214,33 @@ public class Utilities_negative_scenarios  extends Generic_function{
 			browser_wait(20);
 			click("award_points");
 			browser_wait(20);
-//			value=driver.findElement(By.xpath(OR_reader("Object_Locator", "awardpoints_redeem_button"))).isEnabled();
-//			if(value==true) {
-//				browser_wait(20);
-//				click("awardpoints_redeem_button");
-//				browser_wait(30);
-//				ele=driver.findElement(By.xpath(OR_reader("Object_Locator","redeem_points_giftcard")));
-//				ele.sendKeys(td_reader("redeem_points_giftcard"));
-//				ele.sendKeys(Keys.ARROW_DOWN);
-//				ele.sendKeys(Keys.ENTER);
-//				click("redeem_points_amount");
-//				ele=driver.findElement(By.xpath(OR_reader("Object_Locator","redeem_points_amount")));
-//				ele.sendKeys(Keys.BACK_SPACE);
-//				ele.sendKeys(td_reader("redeem_points_amount",2));
-//				click("redeem_points_email");
-//				str= driver.findElement(By.xpath(OR_reader("Object_Locator","redeem_points_amount_valid_msg"))).getText();
-//				Assert.assertEquals(str,td_reader("redeem_points_amount_valid_msg"));   
-//				browser_refresh();
-//				ele.sendKeys(td_reader("redeem_points_amount",1));
-//				click("redeem_points_email");
-//				str= driver.findElement(By.xpath(OR_reader("Object_Locator","redeem_points_amount_valid_msg"))).getText();
-//				Assert.assertEquals(str,td_reader("redeem_points_amount_valid_msg"));    
-//				browser_back();
-//			}
-//			else
-//			{
-//				browser_wait(2);
-//			}
+			value=driver.findElement(By.xpath(OR_reader("Object_Locator", "awardpoints_redeem_button"))).isEnabled();
+			if(value==true) {
+				browser_wait(20);
+				click("awardpoints_redeem_button");
+				browser_wait(30);
+				ele=driver.findElement(By.xpath(OR_reader("Object_Locator","redeem_points_giftcard")));
+				ele.sendKeys(td_reader("redeem_points_giftcard"));
+				ele.sendKeys(Keys.ARROW_DOWN);
+				ele.sendKeys(Keys.ENTER);
+				click("redeem_points_amount");
+				ele=driver.findElement(By.xpath(OR_reader("Object_Locator","redeem_points_amount")));
+				ele.sendKeys(Keys.BACK_SPACE);
+				ele.sendKeys(td_reader("redeem_points_amount",2));
+				click("redeem_points_email");
+				str= driver.findElement(By.xpath(OR_reader("Object_Locator","redeem_points_amount_valid_msg"))).getText();
+				Assert.assertEquals(str,td_reader("redeem_points_amount_valid_msg"));   
+				browser_refresh();
+				ele.sendKeys(td_reader("redeem_points_amount",1));
+				click("redeem_points_email");
+				str= driver.findElement(By.xpath(OR_reader("Object_Locator","redeem_points_amount_valid_msg"))).getText();
+				Assert.assertEquals(str,td_reader("redeem_points_amount_valid_msg"));    
+				browser_back();
+			}
+			else
+			{
+				browser_wait(2);
+			}
 		}catch (Exception e) {
 			e.printStackTrace();
 			takeScreenShot("utilities_negative_tc_007");
@@ -254,11 +254,10 @@ public class Utilities_negative_scenarios  extends Generic_function{
 			click("utilities");
 			browser_wait(40);
 			click("award_points");
-//			click("awardpoints_redeem_button");
-//			value = driver.findElement(By.xpath(OR_reader("Object_Locator", "redeem_points"))).isEnabled();
-//			Assert.assertEquals(true,value);
+			click("awardpoints_redeem_button");
+			value = driver.findElement(By.xpath(OR_reader("Object_Locator", "redeem_points"))).isEnabled();
+			Assert.assertEquals(true,value);
 			click("utilities");
-			System.out.println("Utilities -");
 			browser_close();
 		}catch (Exception e) {
 			e.printStackTrace();
