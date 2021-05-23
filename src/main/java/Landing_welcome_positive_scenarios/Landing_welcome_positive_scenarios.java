@@ -53,7 +53,6 @@ public class Landing_welcome_positive_scenarios extends Generic_function {
 			browser_wait(12);	
 			value = driver.findElement(By.xpath(OR_reader("Object_Locator", "signup_title"))).isDisplayed();
 			Assert.assertEquals(true,value);
-			System.out.println("landing +");
 			browser_close();
 		}catch (Exception e) {
 			e.printStackTrace();
