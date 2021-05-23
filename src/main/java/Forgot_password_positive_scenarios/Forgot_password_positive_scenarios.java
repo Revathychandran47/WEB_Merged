@@ -58,7 +58,6 @@ public class Forgot_password_positive_scenarios extends Generic_function {
 			driver.findElement(By.xpath(OR_reader("Object_Locator","forgot_password_signup_link"))).click();			
 			str= driver.findElement(By.xpath(OR_reader("Object_Locator","signup_page_title"))).getText();
 			Assert.assertEquals(str,td_reader("signup_page_title"));
-			System.out.println("forgot positive");
 			browser_close();
 		} catch (Exception e) {
 			e.printStackTrace();
