@@ -176,7 +176,6 @@ public class Signup_negative_scenarios extends Generic_function{
 			e.printStackTrace();
 			takeScreenShot("signup_negative_tc_010");
 		}
-		System.out.println("signup negative");
 		browser_close();
 	}
 
