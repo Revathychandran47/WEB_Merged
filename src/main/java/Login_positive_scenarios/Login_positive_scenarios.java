@@ -23,13 +23,13 @@ public static boolean value;
 
 	@Then("check  the  Phone number  field is prefixed with country code")
 	/*TC 001 - Validate that the'Phone number' field is prefixed with '+1' country code*/
-	public static void login_positive_tc_001() throws IOException   {
+	public static void login_positive_tc_001() throws Exception   {
 		try {
 			click("welcome_login");
 			browser_wait(12);
 			value = driver.findElement(By.xpath(OR_reader("Object_Locator", "plus_one"))).isDisplayed();
 			Assert.assertEquals(true,value);
-		} catch (IOException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 			takeScreenShot("login_positive_tc_001");
 		}
@@ -37,13 +37,13 @@ public static boolean value;
 
 	@Given("User click on Forgot password")
 	/*TC 002 - Validate that the user is able to click on the 'Forgot password?' link*/
-	public static void login_positive_tc_002() throws IOException  {
+	public static void login_positive_tc_002() throws Exception  {
 		try {
 			click("forgot_password_link");
 			browser_wait(12);
 			value = driver.findElement(By.xpath(OR_reader("Object_Locator", "forgot_password_title"))).isDisplayed();
 			Assert.assertEquals(true,value);
-			} catch (IOException e) {
+			} catch (Exception e) {
 				e.printStackTrace();
 				takeScreenShot("login_positive_tc_002");
 		}
@@ -51,14 +51,14 @@ public static boolean value;
 
 	@Given("User click on Sign up")
 	/*TC 003 - Validate that the user is able click on the 'Sign up' link*/
-	public static void login_positive_tc_003() throws IOException  {
+	public static void login_positive_tc_003() throws Exception  {
        try {
 			driver.navigate().back();
 			click("sign_up_link");
 			browser_wait(12);
 			value = driver.findElement(By.xpath(OR_reader("Object_Locator", "signup_first_name"))).isDisplayed();
 			Assert.assertEquals(true,value);
-			}  catch (IOException e) {
+			}  catch (Exception e) {
 				e.printStackTrace();
 				takeScreenShot("login_positive_tc_003");
 		}
@@ -66,11 +66,11 @@ public static boolean value;
 
 	@Given("User enter  the Password")
 	/*TC 004 -  Validate that the user is able to enter  the Password in the Password field*/
-	public static void login_positive_tc_004() throws IOException {
+	public static void login_positive_tc_004() throws Exception {
 		try {
 			driver.navigate().back();
 			driver.findElement(By.xpath(OR_reader("Object_Locator", "login_password"))).sendKeys(td_reader("login_password",5));
-			} catch (IOException e) {
+			} catch (Exception e) {
 				e.printStackTrace();
 				takeScreenShot("login_positive_tc_004");
 		}
@@ -78,7 +78,7 @@ public static boolean value;
 
 	@When("User enters valid phonenumber and password and User click on login")
 	/*TC 005 - Validate that the user is able to Login with valid data*/
-	public static void login_positive_tc_005() throws IOException  {
+	public static void login_positive_tc_005() throws Exception  {
 		try {
 			browser_refresh();
 			driver.findElement(By.xpath(OR_reader("Object_Locator", "login_phone_number"))).sendKeys(td_reader("login_phone_number",5));
@@ -87,7 +87,7 @@ public static boolean value;
 			browser_wait(12);		
 			value = driver.findElement(By.xpath(OR_reader("Object_Locator", "logout"))).isDisplayed();
 			Assert.assertEquals(true,value);
-		} catch (IOException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 			takeScreenShot("login_positive_tc_005");	
 		}
@@ -95,15 +95,14 @@ public static boolean value;
 
 	@Given("User click on Logout")
 	/*TC 006 - Validate that the user is navigated to 'Landing page' on clicking the 'Log out' option*/
-	public static void login_positive_tc_006() throws IOException {
+	public static void login_positive_tc_006() throws Exception {
 		try {
 			click("logout");
 			browser_wait(12);
 			value = driver.findElement(By.xpath(OR_reader("Object_Locator", "welcome_login"))).isDisplayed();
 			Assert.assertEquals(true,value);
-			System.out.println("login +");
 			browser_close();
-		} catch (IOException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 			takeScreenShot("login_positive_tc_006");	
 		}
