@@ -125,7 +125,6 @@ public class Login_negative_scenarios extends Generic_function {
 			driver.findElement(By.xpath(OR_reader("Object_Locator","login_phone_number"))).sendKeys(Generic_function.td_reader("login_phone_number",4));
 			click("login");
 			end_case="True";
-			System.out.println("login negative");
 		}catch(Exception e) {
 			e.printStackTrace();
 			end_case="False";
