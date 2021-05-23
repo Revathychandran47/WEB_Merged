@@ -88,7 +88,6 @@ public class Homepage_positive_scenarios extends Generic_function {
 			Assert.assertEquals(true,value1);
 			browser_wait(15);
 			browser_back();
-			System.out.println("home +");
 			browser_close();
 		}catch(Exception e) {
 			e.printStackTrace();
